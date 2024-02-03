@@ -22,6 +22,7 @@ export default function Home() {
       </div>
 
       <div className="px-5 mt-6">
+        <h2 className="text-xs flex uppercase text-gray-500 font-semibold mb-2">Agendamentos</h2>
         <BookingItem/>
       </div>
     </div>
