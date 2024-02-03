@@ -32,6 +32,7 @@ model Service {
   barbershopId Int
   barbershop   Barbershop @relation(fields: [barbershopId], references: [id])
   description  String
+  imageurl    String
   bookings     Booking[]
 }
 
