@@ -23,7 +23,7 @@ const BarbershopItem = ({barbershop}: BarbershopItemProps) => {
                     </Badge>
               </div>
                <Image 
-                src={barbershop.imageurl}
+                src={barbershop.imageUrl}
                 fill
                 alt={barbershop.name}
                style={{

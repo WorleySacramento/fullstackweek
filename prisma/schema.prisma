@@ -20,7 +20,7 @@ model Barbershop {
   id       Int       @id @default(autoincrement())
   name     String
   address  String
-  imageurl String
+  imageUrl String
   services Service[]
   bookings  Booking[]
 }
@@ -32,8 +32,8 @@ model Service {
   barbershopId Int
   barbershop   Barbershop @relation(fields: [barbershopId], references: [id])
   description  String
-  imageurl    String
   bookings     Booking[]
+  imageUrl     String
 }
 
 model Booking {

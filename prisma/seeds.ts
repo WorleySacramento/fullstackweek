@@ -105,7 +105,7 @@ async function seedDatabase() {
         data: {
           name,
           address,
-          imageurl: imageUrl,
+          imageUrl: imageUrl,
         },
       });
 
@@ -120,7 +120,7 @@ async function seedDatabase() {
                 id: barbershop.id,
               },
             },
-            imageurl: service.imageUrl,
+            imageUrl: service.imageUrl,
           },
         });
       }
