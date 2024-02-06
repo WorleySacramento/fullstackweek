@@ -1,3 +1,4 @@
+
 import { format } from 'date-fns'
 import Header from "../_components/header";
 import { ptBR } from 'date-fns/locale/pt-BR';
@@ -6,9 +7,11 @@ import BookingItem from '../_components/bokingitem';
 import '../globals.css'
 import { db } from '../_lib/prisma';
 import BarbershopItem from './_components/barbershop-item';
+import { useSession } from 'next-auth/react';
 
 
 export default async function Home() {
+  // const { data } = useSession();
 
   const barbershops = await db.barbershop.findMany({})
   console.log(barbershops, 'aqui')
@@ -18,7 +21,7 @@ export default async function Home() {
     <div className=''>
       <Header />
       <div className=' px-5 pt-5'>
-        <h2 className='text-xl font-bold font-sans '>Olá user</h2>
+        <h2 className='text-xl font-bold font-sans '>Olá</h2>
         <p className='capitalize'>{format(new Date(), "EEEE',' dd 'de' MMM 'de' yyyy", {
           locale: ptBR,
         })}
