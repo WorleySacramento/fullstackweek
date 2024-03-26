@@ -24,38 +24,11 @@ const Header = () => {
                 <SheetTrigger className="h-8 w-8" asChild>
                 <MenuIcon size="small"/>
                 </SheetTrigger>
-
-                <SheetContent className="p-2 bg-slate-400 h-auto" side={"top"}>
-                {/* <SheetHeader  className="text-left border-b border-solid border-slate-300 p-5">
-                    <SheetTitle>Menu</SheetTitle>   
-            
-                </SheetHeader>
-                <div className="flex flex-col p-3">
-                    { status === 'authenticated' && (
-
-                    <div className="flex items-center gap-3">
-                        <Avatar>
-                            <AvatarImage src={data.user?.image ?? ""}/>
-                        </Avatar>
-                        <h2 className=" font-bold z-40">{data.user?.name}</h2>
-                    </div>
-                    )
-                    }
-                    <Button variant='outline' className="justify-start mb-2 gap-4">
-                        <LogOutIcon/> Logar
-                    </Button>
-                    <Button variant='outline' className="justify-start mb-2 gap-4"> 
-                        <HomeIcon/> Inicio
-                    </Button>
-                    <Button variant='outline' className="justify-start mb-2 gap-4">
-                        <CalendarIcon/> Calendar
-                    </Button>
-                </div> */}
+                
+                <SheetContent className="p-2 bg-slate-300 h-auto" side={"top"}>
                 <SideMenu/>
                 </SheetContent>
-            </Sheet>
-           
-          
+            </Sheet>        
             </CardContent>
         </Card>
      );
